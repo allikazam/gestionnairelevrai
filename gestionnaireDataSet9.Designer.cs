@@ -20,17 +20,17 @@ namespace gestionnaire {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("gestionnaireDataSet3")]
+    [global::System.Xml.Serialization.XmlRootAttribute("gestionnaireDataSet9")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class gestionnaireDataSet3 : global::System.Data.DataSet {
+    public partial class gestionnaireDataSet9 : global::System.Data.DataSet {
         
-        private listematerielDataTable tablelistemateriel;
+        private MaterielDataTable tableMateriel;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public gestionnaireDataSet3() {
+        public gestionnaireDataSet9() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace gestionnaire {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected gestionnaireDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected gestionnaireDataSet9(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace gestionnaire {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["listemateriel"] != null)) {
-                    base.Tables.Add(new listematerielDataTable(ds.Tables["listemateriel"]));
+                if ((ds.Tables["Materiel"] != null)) {
+                    base.Tables.Add(new MaterielDataTable(ds.Tables["Materiel"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace gestionnaire {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public listematerielDataTable listemateriel {
+        public MaterielDataTable Materiel {
             get {
-                return this.tablelistemateriel;
+                return this.tableMateriel;
             }
         }
         
@@ -127,7 +127,7 @@ namespace gestionnaire {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            gestionnaireDataSet3 cln = ((gestionnaireDataSet3)(base.Clone()));
+            gestionnaireDataSet9 cln = ((gestionnaireDataSet9)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace gestionnaire {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["listemateriel"] != null)) {
-                    base.Tables.Add(new listematerielDataTable(ds.Tables["listemateriel"]));
+                if ((ds.Tables["Materiel"] != null)) {
+                    base.Tables.Add(new MaterielDataTable(ds.Tables["Materiel"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace gestionnaire {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablelistemateriel = ((listematerielDataTable)(base.Tables["listemateriel"]));
+            this.tableMateriel = ((MaterielDataTable)(base.Tables["Materiel"]));
             if ((initTable == true)) {
-                if ((this.tablelistemateriel != null)) {
-                    this.tablelistemateriel.InitVars();
+                if ((this.tableMateriel != null)) {
+                    this.tableMateriel.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace gestionnaire {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "gestionnaireDataSet3";
+            this.DataSetName = "gestionnaireDataSet9";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/gestionnaireDataSet31.xsd";
+            this.Namespace = "http://tempuri.org/gestionnaireDataSet9.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablelistemateriel = new listematerielDataTable();
-            base.Tables.Add(this.tablelistemateriel);
+            this.tableMateriel = new MaterielDataTable();
+            base.Tables.Add(this.tableMateriel);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializelistemateriel() {
+        private bool ShouldSerializeMateriel() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace gestionnaire {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            gestionnaireDataSet3 ds = new gestionnaireDataSet3();
+            gestionnaireDataSet9 ds = new gestionnaireDataSet9();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,21 +270,21 @@ namespace gestionnaire {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void listematerielRowChangeEventHandler(object sender, listematerielRowChangeEvent e);
+        public delegate void MaterielRowChangeEventHandler(object sender, MaterielRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class listematerielDataTable : global::System.Data.TypedTableBase<listematerielRow> {
+        public partial class MaterielDataTable : global::System.Data.TypedTableBase<MaterielRow> {
             
-            private global::System.Data.DataColumn columnListeMateriel;
+            private global::System.Data.DataColumn columnNom;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public listematerielDataTable() {
-                this.TableName = "listemateriel";
+            public MaterielDataTable() {
+                this.TableName = "Materiel";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +292,7 @@ namespace gestionnaire {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal listematerielDataTable(global::System.Data.DataTable table) {
+            internal MaterielDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +309,16 @@ namespace gestionnaire {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected listematerielDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected MaterielDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ListeMaterielColumn {
+            public global::System.Data.DataColumn NomColumn {
                 get {
-                    return this.columnListeMateriel;
+                    return this.columnNom;
                 }
             }
             
@@ -333,45 +333,45 @@ namespace gestionnaire {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public listematerielRow this[int index] {
+            public MaterielRow this[int index] {
                 get {
-                    return ((listematerielRow)(this.Rows[index]));
+                    return ((MaterielRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event listematerielRowChangeEventHandler listematerielRowChanging;
+            public event MaterielRowChangeEventHandler MaterielRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event listematerielRowChangeEventHandler listematerielRowChanged;
+            public event MaterielRowChangeEventHandler MaterielRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event listematerielRowChangeEventHandler listematerielRowDeleting;
+            public event MaterielRowChangeEventHandler MaterielRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event listematerielRowChangeEventHandler listematerielRowDeleted;
+            public event MaterielRowChangeEventHandler MaterielRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddlistematerielRow(listematerielRow row) {
+            public void AddMaterielRow(MaterielRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public listematerielRow AddlistematerielRow(string ListeMateriel) {
-                listematerielRow rowlistematerielRow = ((listematerielRow)(this.NewRow()));
+            public MaterielRow AddMaterielRow(string Nom) {
+                MaterielRow rowMaterielRow = ((MaterielRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ListeMateriel};
-                rowlistematerielRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowlistematerielRow);
-                return rowlistematerielRow;
+                        Nom};
+                rowMaterielRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMaterielRow);
+                return rowMaterielRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                listematerielDataTable cln = ((listematerielDataTable)(base.Clone()));
+                MaterielDataTable cln = ((MaterielDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -379,47 +379,48 @@ namespace gestionnaire {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new listematerielDataTable();
+                return new MaterielDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnListeMateriel = base.Columns["ListeMateriel"];
+                this.columnNom = base.Columns["Nom"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnListeMateriel = new global::System.Data.DataColumn("ListeMateriel", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnListeMateriel);
-                this.columnListeMateriel.MaxLength = 50;
+                this.columnNom = new global::System.Data.DataColumn("Nom", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNom);
+                this.columnNom.AllowDBNull = false;
+                this.columnNom.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public listematerielRow NewlistematerielRow() {
-                return ((listematerielRow)(this.NewRow()));
+            public MaterielRow NewMaterielRow() {
+                return ((MaterielRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new listematerielRow(builder);
+                return new MaterielRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(listematerielRow);
+                return typeof(MaterielRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.listematerielRowChanged != null)) {
-                    this.listematerielRowChanged(this, new listematerielRowChangeEvent(((listematerielRow)(e.Row)), e.Action));
+                if ((this.MaterielRowChanged != null)) {
+                    this.MaterielRowChanged(this, new MaterielRowChangeEvent(((MaterielRow)(e.Row)), e.Action));
                 }
             }
             
@@ -427,8 +428,8 @@ namespace gestionnaire {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.listematerielRowChanging != null)) {
-                    this.listematerielRowChanging(this, new listematerielRowChangeEvent(((listematerielRow)(e.Row)), e.Action));
+                if ((this.MaterielRowChanging != null)) {
+                    this.MaterielRowChanging(this, new MaterielRowChangeEvent(((MaterielRow)(e.Row)), e.Action));
                 }
             }
             
@@ -436,8 +437,8 @@ namespace gestionnaire {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.listematerielRowDeleted != null)) {
-                    this.listematerielRowDeleted(this, new listematerielRowChangeEvent(((listematerielRow)(e.Row)), e.Action));
+                if ((this.MaterielRowDeleted != null)) {
+                    this.MaterielRowDeleted(this, new MaterielRowChangeEvent(((MaterielRow)(e.Row)), e.Action));
                 }
             }
             
@@ -445,14 +446,14 @@ namespace gestionnaire {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.listematerielRowDeleting != null)) {
-                    this.listematerielRowDeleting(this, new listematerielRowChangeEvent(((listematerielRow)(e.Row)), e.Action));
+                if ((this.MaterielRowDeleting != null)) {
+                    this.MaterielRowDeleting(this, new MaterielRowChangeEvent(((MaterielRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovelistematerielRow(listematerielRow row) {
+            public void RemoveMaterielRow(MaterielRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -461,7 +462,7 @@ namespace gestionnaire {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                gestionnaireDataSet3 ds = new gestionnaireDataSet3();
+                gestionnaireDataSet9 ds = new gestionnaireDataSet9();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -479,7 +480,7 @@ namespace gestionnaire {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "listematerielDataTable";
+                attribute2.FixedValue = "MaterielDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -523,44 +524,26 @@ namespace gestionnaire {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class listematerielRow : global::System.Data.DataRow {
+        public partial class MaterielRow : global::System.Data.DataRow {
             
-            private listematerielDataTable tablelistemateriel;
+            private MaterielDataTable tableMateriel;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal listematerielRow(global::System.Data.DataRowBuilder rb) : 
+            internal MaterielRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablelistemateriel = ((listematerielDataTable)(this.Table));
+                this.tableMateriel = ((MaterielDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ListeMateriel {
+            public string Nom {
                 get {
-                    try {
-                        return ((string)(this[this.tablelistemateriel.ListeMaterielColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'ListeMateriel\' dans la table \'listemateriel\' est DBNul" +
-                                "l.", e);
-                    }
+                    return ((string)(this[this.tableMateriel.NomColumn]));
                 }
                 set {
-                    this[this.tablelistemateriel.ListeMaterielColumn] = value;
+                    this[this.tableMateriel.NomColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsListeMaterielNull() {
-                return this.IsNull(this.tablelistemateriel.ListeMaterielColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetListeMaterielNull() {
-                this[this.tablelistemateriel.ListeMaterielColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -568,22 +551,22 @@ namespace gestionnaire {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class listematerielRowChangeEvent : global::System.EventArgs {
+        public class MaterielRowChangeEvent : global::System.EventArgs {
             
-            private listematerielRow eventRow;
+            private MaterielRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public listematerielRowChangeEvent(listematerielRow row, global::System.Data.DataRowAction action) {
+            public MaterielRowChangeEvent(MaterielRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public listematerielRow Row {
+            public MaterielRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -599,7 +582,7 @@ namespace gestionnaire {
         }
     }
 }
-namespace gestionnaire.gestionnaireDataSet3TableAdapters {
+namespace gestionnaire.gestionnaireDataSet9TableAdapters {
     
     
     /// <summary>
@@ -611,7 +594,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class listematerielTableAdapter : global::System.ComponentModel.Component {
+    public partial class MaterielTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -625,7 +608,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public listematerielTableAdapter() {
+        public MaterielTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -722,8 +705,8 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "listemateriel";
-            tableMapping.ColumnMappings.Add("ListeMateriel", "ListeMateriel");
+            tableMapping.DataSetTable = "Materiel";
+            tableMapping.ColumnMappings.Add("Nom", "Nom");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -740,7 +723,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ListeMateriel FROM dbo.listemateriel";
+            this._commandCollection[0].CommandText = "SELECT Nom FROM dbo.Materiel";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -748,7 +731,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(gestionnaireDataSet3.listematerielDataTable dataTable) {
+        public virtual int Fill(gestionnaireDataSet9.MaterielDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -761,9 +744,9 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual gestionnaireDataSet3.listematerielDataTable GetData() {
+        public virtual gestionnaireDataSet9.MaterielDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            gestionnaireDataSet3.listematerielDataTable dataTable = new gestionnaireDataSet3.listematerielDataTable();
+            gestionnaireDataSet9.MaterielDataTable dataTable = new gestionnaireDataSet9.MaterielDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -837,7 +820,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(gestionnaireDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(gestionnaireDataSet9 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -847,7 +830,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(gestionnaireDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(gestionnaireDataSet9 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -857,7 +840,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(gestionnaireDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(gestionnaireDataSet9 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -891,7 +874,7 @@ namespace gestionnaire.gestionnaireDataSet3TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(gestionnaireDataSet3 dataSet) {
+        public virtual int UpdateAll(gestionnaireDataSet9 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

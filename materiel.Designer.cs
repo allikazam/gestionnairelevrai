@@ -39,30 +39,50 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroSerieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantiteEnStockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantiteMinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantiteMaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produitsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gestionnaireDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gestionnaireDataSet = new gestionnaire.gestionnaireDataSet();
             this.button5 = new System.Windows.Forms.Button();
             this.produitsTableAdapter = new gestionnaire.gestionnaireDataSetTableAdapters.ProduitsTableAdapter();
+            this.gestionnaireDataSet6 = new gestionnaire.gestionnaireDataSet6();
+            this.materielBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materielTableAdapter = new gestionnaire.gestionnaireDataSet6TableAdapters.MaterielTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantiteEnStockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantiteMinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantiteMaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.gestionnaireDataSet7 = new gestionnaire.gestionnaireDataSet7();
+            this.materielBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.materielTableAdapter1 = new gestionnaire.gestionnaireDataSet7TableAdapters.MaterielTableAdapter();
+            this.gestionnaireDataSet8 = new gestionnaire.gestionnaireDataSet8();
+            this.listematerielBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listematerielTableAdapter = new gestionnaire.gestionnaireDataSet8TableAdapters.listematerielTableAdapter();
+            this.gestionnaireDataSet9 = new gestionnaire.gestionnaireDataSet9();
+            this.materielBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.materielTableAdapter2 = new gestionnaire.gestionnaireDataSet9TableAdapters.MaterielTableAdapter();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produitsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materielBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materielBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listematerielBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materielBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(70, 21);
+            this.label1.Location = new System.Drawing.Point(28, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 16);
@@ -97,19 +117,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(187, 118);
+            this.label3.Location = new System.Drawing.Point(225, 118);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.Size = new System.Drawing.Size(39, 16);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Description";
+            this.label3.Text = "Type";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Snow;
-            this.label5.Location = new System.Drawing.Point(460, 118);
+            this.label5.Location = new System.Drawing.Point(492, 83);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 16);
@@ -155,7 +175,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(271, 171);
+            this.button1.Location = new System.Drawing.Point(363, 173);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -166,7 +186,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(394, 171);
+            this.button2.Location = new System.Drawing.Point(486, 173);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
@@ -184,27 +204,9 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(288, 75);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(288, 118);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 22);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(583, 114);
+            this.textBox5.Location = new System.Drawing.Point(571, 79);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 22);
@@ -231,10 +233,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(514, 171);
+            this.button3.Location = new System.Drawing.Point(609, 166);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
+            this.button3.Size = new System.Drawing.Size(84, 35);
             this.button3.TabIndex = 17;
             this.button3.Text = "Supprimer\r\n";
             this.button3.UseVisualStyleBackColor = true;
@@ -242,7 +244,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(637, 171);
+            this.button4.Location = new System.Drawing.Point(725, 169);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 28);
@@ -259,74 +261,17 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.nomDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.numeroSerieDataGridViewTextBoxColumn,
+            this.Type,
             this.quantiteEnStockDataGridViewTextBoxColumn,
             this.quantiteMinDataGridViewTextBoxColumn,
             this.quantiteMaxDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.produitsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(73, 238);
+            this.dataGridView1.DataSource = this.materielBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(120, 237);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(768, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(806, 195);
             this.dataGridView1.TabIndex = 19;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nomDataGridViewTextBoxColumn
-            // 
-            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
-            this.nomDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
-            this.nomDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // numeroSerieDataGridViewTextBoxColumn
-            // 
-            this.numeroSerieDataGridViewTextBoxColumn.DataPropertyName = "NumeroSerie";
-            this.numeroSerieDataGridViewTextBoxColumn.HeaderText = "NumeroSerie";
-            this.numeroSerieDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.numeroSerieDataGridViewTextBoxColumn.Name = "numeroSerieDataGridViewTextBoxColumn";
-            this.numeroSerieDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // quantiteEnStockDataGridViewTextBoxColumn
-            // 
-            this.quantiteEnStockDataGridViewTextBoxColumn.DataPropertyName = "QuantiteEnStock";
-            this.quantiteEnStockDataGridViewTextBoxColumn.HeaderText = "QuantiteEnStock";
-            this.quantiteEnStockDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quantiteEnStockDataGridViewTextBoxColumn.Name = "quantiteEnStockDataGridViewTextBoxColumn";
-            this.quantiteEnStockDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // quantiteMinDataGridViewTextBoxColumn
-            // 
-            this.quantiteMinDataGridViewTextBoxColumn.DataPropertyName = "QuantiteMin";
-            this.quantiteMinDataGridViewTextBoxColumn.HeaderText = "QuantiteMin";
-            this.quantiteMinDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quantiteMinDataGridViewTextBoxColumn.Name = "quantiteMinDataGridViewTextBoxColumn";
-            this.quantiteMinDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // quantiteMaxDataGridViewTextBoxColumn
-            // 
-            this.quantiteMaxDataGridViewTextBoxColumn.DataPropertyName = "QuantiteMax";
-            this.quantiteMaxDataGridViewTextBoxColumn.HeaderText = "QuantiteMax";
-            this.quantiteMaxDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quantiteMaxDataGridViewTextBoxColumn.Name = "quantiteMaxDataGridViewTextBoxColumn";
-            this.quantiteMaxDataGridViewTextBoxColumn.Width = 125;
             // 
             // produitsBindingSource
             // 
@@ -357,12 +302,153 @@
             // 
             this.produitsTableAdapter.ClearBeforeFill = true;
             // 
+            // gestionnaireDataSet6
+            // 
+            this.gestionnaireDataSet6.DataSetName = "gestionnaireDataSet6";
+            this.gestionnaireDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materielBindingSource
+            // 
+            this.materielBindingSource.DataMember = "Materiel";
+            this.materielBindingSource.DataSource = this.gestionnaireDataSet6;
+            // 
+            // materielTableAdapter
+            // 
+            this.materielTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // Type
+            // 
+            this.Type.DataPropertyName = "Type";
+            this.Type.HeaderText = "Type";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            this.Type.Width = 125;
+            // 
+            // quantiteEnStockDataGridViewTextBoxColumn
+            // 
+            this.quantiteEnStockDataGridViewTextBoxColumn.DataPropertyName = "QuantiteEnStock";
+            this.quantiteEnStockDataGridViewTextBoxColumn.HeaderText = "QuantiteEnStock";
+            this.quantiteEnStockDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantiteEnStockDataGridViewTextBoxColumn.Name = "quantiteEnStockDataGridViewTextBoxColumn";
+            this.quantiteEnStockDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // quantiteMinDataGridViewTextBoxColumn
+            // 
+            this.quantiteMinDataGridViewTextBoxColumn.DataPropertyName = "QuantiteMin";
+            this.quantiteMinDataGridViewTextBoxColumn.HeaderText = "QuantiteMin";
+            this.quantiteMinDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantiteMinDataGridViewTextBoxColumn.Name = "quantiteMinDataGridViewTextBoxColumn";
+            this.quantiteMinDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // quantiteMaxDataGridViewTextBoxColumn
+            // 
+            this.quantiteMaxDataGridViewTextBoxColumn.DataPropertyName = "QuantiteMax";
+            this.quantiteMaxDataGridViewTextBoxColumn.HeaderText = "QuantiteMax";
+            this.quantiteMaxDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantiteMaxDataGridViewTextBoxColumn.Name = "quantiteMaxDataGridViewTextBoxColumn";
+            this.quantiteMaxDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listematerielBindingSource, "ListeMateriel", true));
+            this.comboBox1.DataSource = this.listematerielBindingSource;
+            this.comboBox1.DisplayMember = "ListeMateriel";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(288, 115);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(132, 24);
+            this.comboBox1.TabIndex = 64;
+            this.comboBox1.ValueMember = "ListeMateriel";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.materielBindingSource1, "Nom", true));
+            this.comboBox2.DataSource = this.materielBindingSource2;
+            this.comboBox2.DisplayMember = "Nom";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(288, 75);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(132, 24);
+            this.comboBox2.TabIndex = 65;
+            this.comboBox2.ValueMember = "Nom";
+            // 
+            // gestionnaireDataSet7
+            // 
+            this.gestionnaireDataSet7.DataSetName = "gestionnaireDataSet7";
+            this.gestionnaireDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materielBindingSource1
+            // 
+            this.materielBindingSource1.DataMember = "Materiel";
+            this.materielBindingSource1.DataSource = this.gestionnaireDataSet7;
+            // 
+            // materielTableAdapter1
+            // 
+            this.materielTableAdapter1.ClearBeforeFill = true;
+            // 
+            // gestionnaireDataSet8
+            // 
+            this.gestionnaireDataSet8.DataSetName = "gestionnaireDataSet8";
+            this.gestionnaireDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listematerielBindingSource
+            // 
+            this.listematerielBindingSource.DataMember = "listemateriel";
+            this.listematerielBindingSource.DataSource = this.gestionnaireDataSet8;
+            // 
+            // listematerielTableAdapter
+            // 
+            this.listematerielTableAdapter.ClearBeforeFill = true;
+            // 
+            // gestionnaireDataSet9
+            // 
+            this.gestionnaireDataSet9.DataSetName = "gestionnaireDataSet9";
+            this.gestionnaireDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materielBindingSource2
+            // 
+            this.materielBindingSource2.DataMember = "Materiel";
+            this.materielBindingSource2.DataSource = this.gestionnaireDataSet9;
+            // 
+            // materielTableAdapter2
+            // 
+            this.materielTableAdapter2.ClearBeforeFill = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(850, 169);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(100, 28);
+            this.button6.TabIndex = 66;
+            this.button6.Text = "Retirer";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // materiel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(29)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
@@ -370,8 +456,6 @@
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -390,6 +474,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.produitsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materielBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materielBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listematerielBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionnaireDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materielBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,8 +499,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
@@ -420,12 +510,26 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.BindingSource produitsBindingSource;
         private gestionnaireDataSetTableAdapters.ProduitsTableAdapter produitsTableAdapter;
+        private gestionnaireDataSet6 gestionnaireDataSet6;
+        private System.Windows.Forms.BindingSource materielBindingSource;
+        private gestionnaireDataSet6TableAdapters.MaterielTableAdapter materielTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroSerieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantiteEnStockDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantiteMinDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantiteMaxDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private gestionnaireDataSet7 gestionnaireDataSet7;
+        private System.Windows.Forms.BindingSource materielBindingSource1;
+        private gestionnaireDataSet7TableAdapters.MaterielTableAdapter materielTableAdapter1;
+        private gestionnaireDataSet8 gestionnaireDataSet8;
+        private System.Windows.Forms.BindingSource listematerielBindingSource;
+        private gestionnaireDataSet8TableAdapters.listematerielTableAdapter listematerielTableAdapter;
+        private gestionnaireDataSet9 gestionnaireDataSet9;
+        private System.Windows.Forms.BindingSource materielBindingSource2;
+        private gestionnaireDataSet9TableAdapters.MaterielTableAdapter materielTableAdapter2;
+        private System.Windows.Forms.Button button6;
     }
 }

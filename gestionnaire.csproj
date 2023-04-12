@@ -208,6 +208,41 @@
     <Compile Include="connexion.Designer.cs">
       <DependentUpon>connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="gestionnaireDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestionnaireDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestionnaireDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestionnaireDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestionnaireDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestionnaireDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestionnaireDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnaireDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="transactions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +350,83 @@
     </None>
     <None Include="gestionnaireDataSet2.xss">
       <DependentUpon>gestionnaireDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet31.xsc">
+      <DependentUpon>gestionnaireDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet31.xss">
+      <DependentUpon>gestionnaireDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet4.xsc">
+      <DependentUpon>gestionnaireDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet4.xss">
+      <DependentUpon>gestionnaireDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet5.xsc">
+      <DependentUpon>gestionnaireDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet5.xss">
+      <DependentUpon>gestionnaireDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet6.xsc">
+      <DependentUpon>gestionnaireDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet6.xss">
+      <DependentUpon>gestionnaireDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet7.xsc">
+      <DependentUpon>gestionnaireDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet7.xss">
+      <DependentUpon>gestionnaireDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet8.xsc">
+      <DependentUpon>gestionnaireDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet8.xss">
+      <DependentUpon>gestionnaireDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet9.xsc">
+      <DependentUpon>gestionnaireDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnaireDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnaireDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnaireDataSet9.xss">
+      <DependentUpon>gestionnaireDataSet9.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

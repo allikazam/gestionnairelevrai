@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gestionnaireDataSet4" targetNamespace="http://tempuri.org/gestionnaireDataSet4.xsd" xmlns:mstns="http://tempuri.org/gestionnaireDataSet4.xsd" xmlns="http://tempuri.org/gestionnaireDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gestionnaireConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gestionnaireConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.gestionnaire.Properties.Settings.GlobalReference.Default.gestionnaireConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FournisseursTableAdapter" GeneratorDataComponentClassName="FournisseursTableAdapter" Name="Fournisseurs" UserDataComponentName="FournisseursTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gestionnaireConnectionString (Settings)" DbObjectName="dbo.Fournisseurs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nom FROM dbo.Fournisseurs</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gestionnaireDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="gestionnaireDataSet4" msprop:Generator_DataSetName="gestionnaireDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Fournisseurs" msprop:Generator_RowEvHandlerName="FournisseursRowChangeEventHandler" msprop:Generator_RowDeletedName="FournisseursRowDeleted" msprop:Generator_RowDeletingName="FournisseursRowDeleting" msprop:Generator_RowEvArgName="FournisseursRowChangeEvent" msprop:Generator_TablePropName="Fournisseurs" msprop:Generator_RowChangedName="FournisseursRowChanged" msprop:Generator_RowChangingName="FournisseursRowChanging" msprop:Generator_TableClassName="FournisseursDataTable" msprop:Generator_RowClassName="FournisseursRow" msprop:Generator_TableVarName="tableFournisseurs" msprop:Generator_UserTableName="Fournisseurs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_UserColumnName="Nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

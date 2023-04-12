@@ -131,7 +131,7 @@
             this.button2.Location = new System.Drawing.Point(15, 108);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 52);
+            this.button2.Size = new System.Drawing.Size(929, 52);
             this.button2.TabIndex = 9;
             this.button2.Text = "Matériel";
             this.button2.UseVisualStyleBackColor = true;
@@ -140,10 +140,10 @@
             // button3
             // 
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(15, 210);
+            this.button3.Location = new System.Drawing.Point(15, 208);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 52);
+            this.button3.Size = new System.Drawing.Size(929, 52);
             this.button3.TabIndex = 10;
             this.button3.Text = "Fournisseurs";
             this.button3.UseVisualStyleBackColor = true;
@@ -160,9 +160,9 @@
             // button4
             // 
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(15, 320);
+            this.button4.Location = new System.Drawing.Point(15, 309);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 52);
+            this.button4.Size = new System.Drawing.Size(929, 52);
             this.button4.TabIndex = 12;
             this.button4.Text = "Transaction";
             this.button4.UseVisualStyleBackColor = true;

@@ -21,7 +21,15 @@ namespace gestionnaire
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
+            // TODO: cette ligne de code charge les données dans la table 'gestionnaireDataSet9.Materiel'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.materielTableAdapter2.Fill(this.gestionnaireDataSet9.Materiel);
+            // TODO: cette ligne de code charge les données dans la table 'gestionnaireDataSet8.listemateriel'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.listematerielTableAdapter.Fill(this.gestionnaireDataSet8.listemateriel);
+            // TODO: cette ligne de code charge les données dans la table 'gestionnaireDataSet7.Materiel'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.materielTableAdapter1.Fill(this.gestionnaireDataSet7.Materiel);
+            // TODO: cette ligne de code charge les données dans la table 'gestionnaireDataSet6.Materiel'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.materielTableAdapter.Fill(this.gestionnaireDataSet6.Materiel);
+
 
         }
 
@@ -42,8 +50,7 @@ namespace gestionnaire
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@ID", int.Parse(textBox1.Text));
-                        cmd.Parameters.AddWithValue("@Nom", textBox2.Text);
-                        cmd.Parameters.AddWithValue("@DType", textBox3.Text);
+                       
                         cmd.Parameters.AddWithValue("@QuantiteEnStock", int.Parse(textBox5.Text));
                         cmd.Parameters.AddWithValue("@QuantiteMin", int.Parse(textBox6.Text));
                         cmd.Parameters.AddWithValue("@QuantiteMax", int.Parse(textBox7.Text));
@@ -51,8 +58,7 @@ namespace gestionnaire
                     }
                 }
             textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
+           
             textBox5.Clear();
             textBox6.Clear();
             textBox7.Clear();
@@ -71,8 +77,7 @@ namespace gestionnaire
                 con.Open();
                 SqlCommand cmd = new SqlCommand("Update Materiel set Nom = @Nom, Description=@Description, NumeroSerie= @NumeroSerie, QuantiteEnStock=@QuantiteEnStock where ID=@ID ",con);
                 cmd.Parameters.AddWithValue("@ID", textBox1.Text);
-                cmd.Parameters.AddWithValue("@Nom", textBox2.Text);
-                cmd.Parameters.AddWithValue("@Type", textBox3.Text);
+               
                 cmd.Parameters.AddWithValue("@QuantiteEnStock", textBox5.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
